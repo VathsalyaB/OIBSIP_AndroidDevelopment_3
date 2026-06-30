@@ -1,0 +1,14 @@
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="calculator_bg">#D8D0DD</color>
+
+    <color name="card_bg">#2E2E2E</color>
+
+    <color name="button_bg">#3A3A3A</color>
+
+    <color name="button_equal">#F57C20</color>
+
+</resources>

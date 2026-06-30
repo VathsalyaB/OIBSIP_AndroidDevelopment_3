@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calculator_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="560dp"
+        android:background="@drawable/display_background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Expression -->
+
+        <TextView
+            android:id="@+id/txtExpression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <!-- Result -->
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="bottom|end"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="4">
+
+            <!-- Row 1 -->
+
+            <TextView
+                android:id="@+id/btnAC"
+                style="@style/CalcButton"
+                android:text="AC" />
+
+            <TextView
+                android:id="@+id/btnDEL"
+                style="@style/CalcButton"
+                android:text="DEL" />
+
+            <TextView
+                android:id="@+id/btnPercent"
+                style="@style/CalcButton"
+                android:text="%" />
+
+            <TextView
+                android:id="@+id/btnDivide"
+                style="@style/CalcButton"
+                android:text="/" />
+
+            <!-- Row 2 -->
+
+            <TextView
+                android:id="@+id/btn7"
+                style="@style/CalcButton"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/btn8"
+                style="@style/CalcButton"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/btn9"
+                style="@style/CalcButton"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/btnMultiply"
+                style="@style/CalcButton"
+                android:text="*" />
+
+            <!-- Row 3 -->
+
+            <TextView
+                android:id="@+id/btn4"
+                style="@style/CalcButton"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/btn5"
+                style="@style/CalcButton"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/btn6"
+                style="@style/CalcButton"
+                android:layout_width="69dp"
+                android:layout_height="66dp"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/btnMinus"
+                style="@style/CalcButton"
+                android:text="-" />
+
+            <!-- Row 4 -->
+
+            <TextView
+                android:id="@+id/btn1"
+                style="@style/CalcButton"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/btn2"
+                style="@style/CalcButton"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/btn3"
+                style="@style/CalcButton"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/btnPlus"
+                style="@style/CalcButton"
+                android:text="+" />
+
+            <!-- Row 5 -->
+
+            <TextView
+                android:id="@+id/btn0"
+                style="@style/CalcButton"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/btnDot"
+                style="@style/CalcButton"
+                android:text="." />
+
+            <TextView
+                android:id="@+id/btnEqual"
+                android:layout_width="136dp"
+                android:layout_height="72dp"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:text="="
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_equal"
+                android:layout_columnSpan="2"/>
+
+        </GridLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="History"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/btnClearHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Clear History"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/listHistory"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
