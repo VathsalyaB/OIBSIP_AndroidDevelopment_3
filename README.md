@@ -1,3 +1,4 @@
+# OIBSIP_AndroidDevelopment_3
 # Calculator App
 
 ##  Overview
@@ -27,7 +28,7 @@ To develop a calculator application that performs common arithmetic operations w
 * XML
 * Android SDK
 
-## 📌 Steps Performed
+##  Steps Performed
 
 1. Designed the calculator interface using XML layouts.
 2. Implemented button click listeners in Java.
